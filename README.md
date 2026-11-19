@@ -26,12 +26,28 @@ Coming soon
 ## Example output
 *Subquestion 2:* Of the games that are older than 10 years what are the top twenty by ratings?
 
-def top_10_old_games(games):
-    old_games = games[games["release_year"] < 2016]
-    best = old_games.sort_values("pct_pos_total", ascending=False)
-    return best[["name", "release_year", "pct_pos_total"]].head(20)
-
-print(top_10_old_games(games))
+```                                 name  release_year  pct_pos_total
+6                            Terraria          2011             97
+17             Euro Truck Simulator 2          2012             97
+45      The Binding of Isaac: Rebirth          2014             97
+48                       BeamNG.drive          2015             97
+203                     Hotline Miami          2012             97
+125            Mount & Blade: Warband          2010             97
+278                    Papers, Please          2013             97
+301                        Dishonored          2012             97
+352              BattleBlock Theater®          2014             97
+350  South Park™: The Stick of Truth™          2014             97
+605                 The Wolf Among Us          2013             97
+632                          The Room          2014             97
+395                  The Walking Dead          2012             97
+893                     Super Hexagon          2012             97
+950                          Fran Bow          2015             97
+967     Stronghold Crusader HD (2012)          2013             97
+878                   The Expendabros          2014             97
+677                         Duck Game          2015             97
+388                          Broforce          2015             97
+68                          Undertale          2015             96
+```
 
 ## AI Use Disclosure
 Coming soon
