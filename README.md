@@ -24,7 +24,14 @@ The [Steam Games Dataset](https://www.kaggle.com/datasets/artermiloff/steam-game
 Coming soon
 
 ## Example output
-Coming soon
+*Subquestion 2:* Of the games that are older than 10 years what are the top twenty by ratings?
+
+def top_10_old_games(games):
+    old_games = games[games["release_year"] < 2016]
+    best = old_games.sort_values("pct_pos_total", ascending=False)
+    return best[["name", "release_year", "pct_pos_total"]].head(20)
+
+print(top_10_old_games(games))
 
 ## AI Use Disclosure
 Coming soon
