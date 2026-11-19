@@ -48,7 +48,10 @@ Coming soon
 388                          Broforce          2015             97
 68                          Undertale          2015             96
 ```
-
+*Class __init___:* Based upon the 3 subquestions what is a rating out of 10 to remaster/continue development of Arma 3?
+``` 
+8.4
+```
 ## AI Use Disclosure
 Coming soon
 
